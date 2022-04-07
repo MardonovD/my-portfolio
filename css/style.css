@@ -12,8 +12,9 @@ body {
   padding: 0;
   line-height: 1.5;
   font-size: 16px;
-
+  /* background-color: red; */
   font-family: "Poppins" sans-serif;
+  color: var(--bg-black-900);
 }
 
 * {
@@ -32,7 +33,7 @@ ul {
 }
 
 .section {
-  background: var(--bg-black-900);
+  background: var(--text-black-900);
   min-height: 100vh;
   display: block;
 
@@ -70,7 +71,7 @@ ul {
 }
 .section-title h2 {
   font-size: 40px;
-  color: var(--text-black-900);
+  color: var(--bg-black-900);
   font-weight: 700;
   position: relative;
 }
@@ -100,6 +101,7 @@ ul {
   margin-left: -15px;
   margin-right: -15px;
   position: relative;
+  margin-left: 15px;
 }
 
 .btn {
@@ -107,7 +109,7 @@ ul {
   font-weight: 500;
   border: none;
   padding: 12px 32px;
-  color: white;
+  color: var(--bg-black-900);
   border-radius: 40px;
   display: inline-block;
   white-space: nowrap;
@@ -124,7 +126,7 @@ ul {
 
 .aside {
   width: 270px;
-  background: var(--bg-black-100);
+  background: var(--text-black-900);
 
   position: fixed;
   top: 0;
@@ -147,7 +149,7 @@ ul {
   text-transform: capitalize;
 }
 .aside .logo a {
-  color: var(--text-black-900);
+  color: var(--bg-black-900);
   font-weight: 700;
 
   padding: 15px 20px;
@@ -233,11 +235,11 @@ ul {
   font-weight: 600;
   border-bottom: 1px solid var(--bg-black-50);
   display: block;
-  color: var(--text-black-900);
+  color: var(--bg-black-50);
   padding: 5px 15px;
 }
 .aside .nav li a.active {
-  color: var(--skin-color);
+  color: var(--bg-black-900);
 }
 .aside .nav li a i {
   margin-right: 15px;
@@ -246,7 +248,7 @@ ul {
 .home {
   min-height: 100vh;
   display: flex;
-  color: var(--text-black-900);
+  color: var(--bg-black-900);
 }
 
 .home .home-info {
@@ -276,7 +278,7 @@ h3.my-profession {
 .home-info p {
   margin-bottom: 70px;
   font-size: 20px;
-  color: var(--text-black-700);
+  color: var(--bg-black-900);
 }
 
 .home .home-img {
@@ -330,7 +332,7 @@ h3.my-profession {
   font-size: 24px;
   margin-bottom: 15px;
   font-weight: 700;
-  color: var(--text-black-900);
+  color: var(--bg-black-100);
 }
 .about .about-content .about-text h3 span {
   color: var(--skin-color);
@@ -338,7 +340,7 @@ h3.my-profession {
 .about .about-content .about-text p {
   font-size: 16px;
   line-height: 25px;
-  color: var(--text-black-700);
+  color: var(--bg-black-100);
 }
 .about .about-content .personal-info {
   flex: 0 0 60%;
@@ -353,13 +355,13 @@ h3.my-profession {
 .about .about-content .personal-info .info-item p {
   font-weight: 600;
   font-size: 16px;
-  color: var(--text-black-900);
-  border-bottom: 1px solid var(--bg-black-50);
+  /* color: var(--text-black-900); */
+  color: var(--bg-black-900);
   /* padding: 10px 0; */
 }
 .about .about-content .personal-info .info-item p span {
   font-weight: 400;
-  color: var(--text-black-700);
+  color: var(--bg-black-900);
   margin-left: 4px;
   display: inline-block;
 }
@@ -375,4 +377,378 @@ h3.my-profession {
   flex: 0 0 40%;
   max-width: 40%;
   margin-top: 40px;
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+    padding: 0;
+    /* line-height: ; */
+    font-size: 12px;
+    /* background-color: red; */
+    font-family: "Poppins" sans-serif;
+    color: var(--bg-black-900);
+  }
+
+  * {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+  }
+
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .section {
+    background: var(--text-black-900);
+    min-height: 100vh;
+    display: block;
+
+    padding: 0 10px;
+    opacity: 1;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+  .main-content {
+    padding-left: 70px;
+  }
+  .padd-15 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .container {
+    max-width: 500px;
+    width: 100%;
+
+    margin: auto;
+  }
+
+  .section .container {
+    /* padding-top: 60px; */
+    /* padding-bottom: 70px; */
+  }
+
+  .section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* margin-bottom: 60px; */
+  }
+  .section-title h2 {
+    font-size: 20px;
+    color: var(--bg-black-900);
+    font-weight: 500;
+    position: relative;
+  }
+  .section-title h2::before {
+    content: "";
+    height: 2px;
+    width: 20px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .section-title h2::after {
+    content: "";
+    height: 2px;
+    width: 15px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    position: relative;
+    margin-left: 5px;
+  }
+
+  .btn {
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    padding: 6px 22px;
+    color: var(--bg-black-900);
+    border-radius: 10px;
+    display: inline-block;
+    white-space: nowrap;
+
+    background: var(--skin-color);
+    transition: all 0.3s ease;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+  }
+
+  /* aside bolimi */
+
+  .aside {
+    width: 70px;
+    background: var(--text-black-900);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    border-right: 1px solid var(--bg-black-50);
+    padding: 10px;
+    height: 100%;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aside .logo {
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .aside .logo a {
+    color: var(--bg-black-900);
+    font-weight: 500;
+
+    padding: 5px 10px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  .aside .logo a span {
+    font-family: "Clicker Script ", cursive;
+    font-size: 20px;
+  }
+
+  .aside .logo a::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid var(--skin-color);
+    border-left: 2px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+  }
+  .aside .logo a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+  }
+  .aside .nav-toggler {
+    height: 20px;
+    width: 25px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 100px;
+    top: 10px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .aside .nav-toggler span {
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+  }
+  .aside .nav-toggler span::before {
+    content: "";
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+  }
+  .aside .nav-toggler span::after {
+    content: "";
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+  }
+
+  .aside .nav {
+    margin-top: 50px;
+  }
+  .aside .nav li {
+    margin-bottom: 20px;
+    display: block;
+  }
+  .aside .nav li a {
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--bg-black-50);
+    display: block;
+    color: var(--bg-black-50);
+    padding: 5px 15px;
+  }
+  .aside .nav li a.active {
+    color: var(--bg-black-900);
+  }
+  .aside .nav li a i {
+    margin-right: 15px;
+  }
+
+  .home {
+    min-height: 100vh;
+    display: flex;
+    color: var(--bg-black-900);
+  }
+
+  .home .home-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
+  h3.hello {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+  h3.hello span {
+    font-family: "Clicker Script", cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--skin-color);
+  }
+  h3.my-profession {
+    font-size: 30px;
+    margin: 15px 0;
+  }
+
+  .typing {
+    color: var(--skin-color);
+  }
+
+  .home-info p {
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--bg-black-900);
+  }
+
+  .home .home-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    position: relative;
+    text-align: center;
+  }
+
+  .home-img::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    bottom: -40px;
+    right: 20px;
+  }
+  .home-img::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: 20px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: -20px;
+    top: -40px;
+  }
+
+  .home .home-img img {
+    margin: auto;
+    height: 200px;
+    border-radius: 5px;
+  }
+
+  /* About  */
+
+  .about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about .about-content .about-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about .about-content .about-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--bg-black-100);
+  }
+  .about .about-content .about-text h3 span {
+    color: var(--skin-color);
+  }
+  .about .about-content .about-text p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--bg-black-100);
+  }
+  .about .about-content .personal-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+
+    margin-top: 40px;
+  }
+  .about .about-content .personal-info .info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .about .about-content .personal-info .info-item p {
+    font-weight: 600;
+    font-size: 16px;
+    /* color: var(--text-black-900); */
+    color: var(--bg-black-900);
+    /* padding: 10px 0; */
+  }
+  .about .about-content .personal-info .info-item p span {
+    font-weight: 400;
+    color: var(--bg-black-900);
+    margin-left: 4px;
+    display: inline-block;
+  }
+  .about .about-content .personal-info .buttons {
+    margin-top: 10px;
+  }
+  .about .about-content .personal-info .buttons .btn {
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+
+  .about .about-content .skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+  }
 }
